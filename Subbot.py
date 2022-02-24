@@ -10,9 +10,9 @@ options.add_argument('--disable-notifications')
 PATH = "D:\ChromeDriver_Python\chromedriver.exe"   #Path to chromedriver application
 driver = webdriver.Chrome(PATH, options=options)   #Opens chromedriver and disable notification
 
-driver.get("https://www.subpals.com/login/final/UC4TyrcUpvQsKle_zsf3AliA/")  #Your Channel Id at the last after "final"
+driver.get("https://www.subpals.com/login/final/<Channel ID Here>/")  #Your Channel Id, remove '< >'
 password = driver.find_element_by_xpath('//*[@id="core-wrapper"]/section/div/div/div/div/div/form/div[2]/input')
-password.send_keys('subbot123')         #Your Password
+password.send_keys('<Password Here>')         #Your Password
 
 letme = driver.find_element_by_xpath('//*[@id="core-wrapper"]/section/div/div/div/div/div/form/button')
 letme.click()
